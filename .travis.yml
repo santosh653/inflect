@@ -5,8 +5,18 @@ sudo: false
 matrix:
   include:
   - go: "1.9.x"
+    arch: amd64
   - go: "1.10.x"
+    arch: amd64
   - go: "1.11.x"
+    arch: amd64
+  - go: "1.13"
+    arch: ppc64le
+  - go: "1.14"
+    arch: ppc64le
+  - go: "1.15"
+    arch: ppc64le
+    
     env:
       - GO111MODULE=off
   - go: "1.11.x"
